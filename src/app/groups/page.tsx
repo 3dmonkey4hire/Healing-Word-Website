@@ -40,10 +40,12 @@ export default function GroupsPage() {
       <section
         className="px-6 text-center relative overflow-hidden flex items-center justify-center"
         style={{
-          minHeight: 'max(56.25vw, 480px)',
+          minHeight: 'max(30.2vw, 420px)',
           backgroundImage: 'url(/images/groups-hero.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundSize: '100% auto',
+          backgroundPosition: 'center top',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: '#1B4332',
         }}
       >
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(27,67,50,0.82) 0%, rgba(27,67,50,0.55) 60%, rgba(27,67,50,0.35) 100%)' }} />
