@@ -42,13 +42,15 @@ export default function TelehealthPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative flex items-center justify-center px-6 py-24 overflow-hidden text-center" style={{ minHeight: 'max(56.25vw, 480px)' }}>
-        {/* Background image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/telehealth-hero.jpg')" }}
-          aria-hidden="true"
-        />
+      <section className="relative flex items-center justify-center px-6 py-24 overflow-hidden text-center" style={{
+        minHeight: 'max(30.2vw, 420px)',
+        backgroundImage: "url('/images/telehealth-hero.jpg')",
+        backgroundSize: '100% auto',
+        backgroundPosition: 'center top',
+        backgroundRepeat: 'no-repeat',
+        backgroundColor: '#1B4332',
+      }}>
+        {/* Background image div removed — handled by section */}
         {/* Dark forest green overlay */}
         <div
           className="absolute inset-0"
