@@ -12,17 +12,19 @@ export const metadata: Metadata = {
 export default function FAQPage() {
   return (
     <>
-      <SectionWrapper className="bg-neutral-50 text-center">
-        <h1
-          className="text-5xl font-bold text-brand-purple-dark mb-4"
-          style={{ fontFamily: 'var(--font-lora)' }}
-        >
-          Frequently Asked Questions
-        </h1>
-        <p className="text-neutral-600 text-lg max-w-2xl mx-auto">
-          Everything you want to know before reaching out. Still have questions? The free consultation call is the right next step.
-        </p>
-      </SectionWrapper>
+      <section className="py-20 px-6 text-center" style={{ backgroundColor: '#1B4332' }}>
+        <div className="max-w-6xl mx-auto">
+          <h1
+            className="text-5xl font-bold text-white mb-4"
+            style={{ fontFamily: 'var(--font-lora)' }}
+          >
+            Frequently Asked Questions
+          </h1>
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#A8C9A0' }}>
+            Everything you want to know before reaching out. Still have questions? The free consultation call is the right next step.
+          </p>
+        </div>
+      </section>
 
       <SectionWrapper className="bg-white">
         <div className="max-w-3xl mx-auto space-y-12">
