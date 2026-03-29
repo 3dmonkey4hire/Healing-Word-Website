@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Brand Colors — Forest Green + Muted Earth Tones */
+  --color-brand-purple: #2D6A4F;
+  --color-brand-purple-dark: #1B4332;
+  --color-brand-purple-light: #D8EDDF;
+  --color-brand-teal: #40916C;
+  --color-brand-teal-light: #E2F4E8;
+  --color-brand-amber: #7A5A28;
+  --color-brand-amber-light: #F5ECD4;
+  --color-brand-coral: #8B4A2F;
+  --color-brand-coral-light: #F2E4DC;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Neutral Colors */
+  --color-neutral-900: #2C2C2A;
+  --color-neutral-600: #5F5E5A;
+  --color-neutral-200: #D3D1C7;
+  --color-neutral-100: #F1EFE8;
+  --color-neutral-50: #FAFAF7;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Fonts */
+  --font-inter: var(--font-inter-var), sans-serif;
+  --font-lora: var(--font-lora-var), serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-neutral-50);
+  color: var(--color-neutral-900);
+  font-family: var(--font-inter);
+}
+
+h1, h2 {
+  font-family: var(--font-lora);
 }
