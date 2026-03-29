@@ -38,7 +38,7 @@ export default function HomePage() {
       {/* Hero */}
       <section
         className="flex items-center px-6 py-20 relative overflow-hidden"
-        style={{ minHeight: 'max(56.25vw, 480px)', background: 'linear-gradient(135deg, #1B4332 0%, #2D6A4F 100%)' }}
+        style={{ minHeight: 'max(30.2vw, 420px)', background: 'linear-gradient(135deg, #1B4332 0%, #2D6A4F 100%)' }}
       >
         <HeroSlideshow />
         <div className="max-w-6xl mx-auto w-full relative z-10" style={{ transform: 'translateY(-48px)' }}>

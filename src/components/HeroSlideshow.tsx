@@ -27,9 +27,11 @@ export default function HeroSlideshow() {
         <div
           key={src}
           aria-hidden="true"
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-no-repeat"
           style={{
             backgroundImage: `url('${src}')`,
+            backgroundSize: '100% auto',
+            backgroundPosition: 'center top',
             opacity: i === current ? 1 : 0,
             transition: `opacity ${FADE_DURATION}ms ease-in-out`,
           }}
