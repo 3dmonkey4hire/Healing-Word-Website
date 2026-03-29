@@ -19,49 +19,51 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <SectionWrapper className="bg-brand-purple-light">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="flex flex-col items-center gap-3">
-            <div
-              className="rounded-2xl bg-white shadow-lg flex items-center justify-center w-full max-w-sm"
-              style={{ height: 400 }}
-              role="img"
-              aria-label="Placeholder for Drew's photo"
-            >
-              <span
-                className="font-bold text-brand-purple-dark"
-                style={{ fontFamily: 'var(--font-lora)', fontSize: 100 }}
+      <section className="py-20 px-6" style={{ backgroundColor: '#1B4332' }}>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="flex flex-col items-center gap-3">
+              <div
+                className="rounded-2xl bg-white shadow-lg flex items-center justify-center w-full max-w-sm"
+                style={{ height: 400 }}
+                role="img"
+                aria-label="Placeholder for Drew's photo"
               >
-                D
-              </span>
-            </div>
-            <p className="text-sm text-neutral-600 italic text-center">Drew | LPC-Associate | Healing Word Counseling</p>
-          </div>
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-brand-purple mb-3">Meet Your Counselor</p>
-            <h1
-              className="text-5xl font-bold text-brand-purple-dark mb-4 leading-tight"
-              style={{ fontFamily: 'var(--font-lora)' }}
-            >
-              Hi, I am Drew.
-            </h1>
-            <p className="text-neutral-700 leading-relaxed text-lg mb-6">
-              I am a licensed counselor specializing in narrative therapy and story-driven approaches for adolescents and young adults ages 15-32. I believe therapy should feel safe, human, and actually useful — not like a script you have to follow.
-            </p>
-            <div className="flex flex-wrap gap-2 mb-6">
-              {['LPC-Associate — Texas', 'Narrative Therapy', 'Story-Driven Approaches', 'Telehealth'].map((badge) => (
                 <span
-                  key={badge}
-                  className="bg-white border border-brand-purple text-brand-purple text-xs font-semibold px-3 py-1.5 rounded-full"
+                  className="font-bold text-brand-purple-dark"
+                  style={{ fontFamily: 'var(--font-lora)', fontSize: 100 }}
                 >
-                  {badge}
+                  D
                 </span>
-              ))}
+              </div>
+              <p className="text-sm italic text-center" style={{ color: '#A8C9A0' }}>Drew | LPC-Associate | Healing Word Counseling</p>
             </div>
-            <CTAButton href="/contact" variant="primary">Book a Free Consultation</CTAButton>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#fbbf24' }}>Meet Your Counselor</p>
+              <h1
+                className="text-5xl font-bold text-white mb-4 leading-tight"
+                style={{ fontFamily: 'var(--font-lora)' }}
+              >
+                Hi, I am Drew.
+              </h1>
+              <p className="leading-relaxed text-lg mb-6" style={{ color: '#A8C9A0' }}>
+                I am a licensed counselor specializing in narrative therapy and story-driven approaches for adolescents and young adults ages 15-32. I believe therapy should feel safe, human, and actually useful — not like a script you have to follow.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {['LPC-Associate — Texas', 'Narrative Therapy', 'Story-Driven Approaches', 'Telehealth'].map((badge) => (
+                  <span
+                    key={badge}
+                    className="bg-white/10 border border-white/30 text-white text-xs font-semibold px-3 py-1.5 rounded-full"
+                  >
+                    {badge}
+                  </span>
+                ))}
+              </div>
+              <CTAButton href="/contact" variant="primary">Book a Free Consultation</CTAButton>
+            </div>
           </div>
         </div>
-      </SectionWrapper>
+      </section>
 
       {/* Origin Story */}
       <SectionWrapper className="bg-white">
