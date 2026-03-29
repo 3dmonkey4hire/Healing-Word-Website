@@ -41,7 +41,7 @@ export default function HomePage() {
         style={{ minHeight: 'max(30.2vw, 420px)', background: 'linear-gradient(135deg, #1B4332 0%, #2D6A4F 100%)' }}
       >
         <HeroSlideshow />
-        <div className="max-w-6xl mx-auto w-full relative z-10" style={{ transform: 'translateY(-48px)' }}>
+        <div className="max-w-6xl mx-auto w-full relative z-10" style={{ transform: 'translateY(0px)' }}>
           <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: '#fbbf24' }}>
             Telehealth Counseling for Ages 15-32
           </p>
