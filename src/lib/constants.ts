@@ -1,9 +1,9 @@
 export const navLinks = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
   { label: 'Telehealth', href: '/telehealth' },
   { label: 'Services', href: '/services' },
   { label: 'Groups', href: '/groups' },
+  { label: 'About', href: '/about' },
   { label: 'FAQ', href: '/faq' },
 ];
 
