@@ -258,25 +258,36 @@ export default function HomePage() {
       </SectionWrapper>
 
       {/* Approach Reveal */}
-      <SectionWrapper className="bg-brand-amber-light">
-        <div className="max-w-3xl mx-auto text-center py-4">
-          <p className="text-xs font-semibold uppercase tracking-widest mb-3 text-brand-amber">
+      <section
+        className="relative flex items-center justify-center overflow-hidden"
+        style={{
+          minHeight: 'max(30.2vw, 420px)',
+          backgroundImage: "url('/images/Words%20are%20healing.jpg')",
+          backgroundSize: '100% auto',
+          backgroundPosition: 'center top',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: '#1B4332',
+        }}
+      >
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(27,67,50,0.72) 0%, rgba(45,106,79,0.58) 100%)' }} />
+        <div className="relative z-10 max-w-3xl mx-auto text-center px-6 py-16">
+          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#fbbf24' }}>
             The Approach
           </p>
           <h2
-            className="text-3xl md:text-4xl font-bold italic text-brand-purple-dark mb-6"
+            className="text-3xl md:text-4xl font-bold italic text-white mb-6"
             style={{ fontFamily: 'var(--font-lora)' }}
           >
             Words are the medicine.
           </h2>
-          <p className="text-neutral-700 text-lg leading-loose">
+          <p className="text-lg leading-loose" style={{ color: '#d1fae5' }}>
             The name Healing Word reflects a simple belief: language, story, and genuine connection are the most powerful tools in therapy. When the right words are spoken — or heard — at the right moment, something shifts. That is the foundation of this practice: narrative therapy that meets you inside your own story, at whatever level of engagement feels right for you.
           </p>
-          <a href="/groups" className="block mt-6 text-brand-purple font-semibold text-sm italic hover:underline">
+          <a href="/groups" className="block mt-6 font-semibold text-sm italic hover:underline" style={{ color: '#fbbf24' }}>
             Learn about our Narrative Adventure Groups
           </a>
         </div>
-      </SectionWrapper>
+      </section>
 
       {/* FAQ Preview */}
       <SectionWrapper className="bg-neutral-50">
