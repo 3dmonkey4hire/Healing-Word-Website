@@ -10,6 +10,7 @@ interface CTAButtonProps {
   onClick?: () => void;
   type?: 'button' | 'submit';
   fullWidth?: boolean;
+  style?: React.CSSProperties;
 }
 
 export default function CTAButton({
@@ -20,6 +21,7 @@ export default function CTAButton({
   onClick,
   type,
   fullWidth,
+  style,
 }: CTAButtonProps) {
   const base = 'inline-block px-8 py-4 rounded-full font-semibold text-base transition-all duration-200 cursor-pointer text-center';
 
@@ -39,14 +41,14 @@ export default function CTAButton({
 
   if (type === 'submit' || !href) {
     return (
-      <button type={type || 'button'} className={allClasses} onClick={onClick}>
+      <button type={type || 'button'} className={allClasses} onClick={onClick} style={style}>
         {children}
       </button>
     );
   }
 
   return (
-    <Link href={href} className={allClasses} onClick={onClick}>
+    <Link href={href} className={allClasses} onClick={onClick} style={style}>
       {children}
     </Link>
   );
