@@ -38,10 +38,16 @@ export default function GroupsPage() {
     <>
       {/* Hero */}
       <section
-        className="py-28 px-6 text-center"
-        style={{ backgroundColor: '#1B4332' }}
+        className="px-6 text-center relative overflow-hidden flex items-center justify-center"
+        style={{
+          minHeight: 'max(56.25vw, 480px)',
+          backgroundImage: 'url(/images/groups-hero.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
-        <div className="max-w-3xl mx-auto">
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(27,67,50,0.82) 0%, rgba(27,67,50,0.55) 60%, rgba(27,67,50,0.35) 100%)' }} />
+        <div className="max-w-3xl mx-auto relative z-10 py-28">
           <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: '#fbbf24' }}>
             Narrative Adventure Groups
           </p>
