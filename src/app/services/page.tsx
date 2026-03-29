@@ -69,18 +69,20 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <SectionWrapper className="bg-brand-amber-light text-center">
-        <p className="text-xs font-semibold uppercase tracking-widest text-brand-amber mb-3">Services</p>
-        <h1
-          className="text-5xl font-bold text-brand-purple-dark mb-4 max-w-3xl mx-auto leading-tight"
-          style={{ fontFamily: 'var(--font-lora)' }}
-        >
-          Counseling Designed for How You Actually Think
-        </h1>
-        <p className="text-neutral-700 text-lg max-w-2xl mx-auto">
-          One-on-one telehealth counseling for adolescents and young adults ages 15-32. Narrative-based, non-judgmental, and designed to actually feel useful.
-        </p>
-      </SectionWrapper>
+      <section className="py-20 px-6 text-center" style={{ backgroundColor: '#1B4332' }}>
+        <div className="max-w-6xl mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#fbbf24' }}>Services</p>
+          <h1
+            className="text-5xl font-bold text-white mb-4 max-w-3xl mx-auto leading-tight"
+            style={{ fontFamily: 'var(--font-lora)' }}
+          >
+            Counseling Designed for How You Actually Think
+          </h1>
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#A8C9A0' }}>
+            One-on-one telehealth counseling for adolescents and young adults ages 15-32. Narrative-based, non-judgmental, and designed to actually feel useful.
+          </p>
+        </div>
+      </section>
 
       {/* Services */}
       <SectionWrapper className="bg-white">
