@@ -24,10 +24,6 @@ export const faqData = [
         a: 'Not at all. The narrative approach is about how we understand and talk about experience — not about creative writing or performance. Most clients have no storytelling background and find the approach completely intuitive.',
       },
       {
-        q: 'Do I have to know how to play D&D for the group therapy?',
-        a: 'Absolutely not. Drew teaches everything you need. Most group participants have never played before. If you\'ve never rolled a die, you\'re welcome here.',
-      },
-      {
         q: 'Are the interactive/story-based techniques required in individual sessions?',
         a: 'No. The TTRPG and storytelling elements are tools — not requirements. Individual sessions can be pure narrative therapy with no game elements at all. We tailor the approach to each client\'s comfort level.',
       },
