@@ -19,6 +19,8 @@ interface FormData {
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
   const {
     register,
     handleSubmit,
@@ -30,8 +32,22 @@ export default function ContactForm() {
   const labelClass = 'block text-sm font-medium text-neutral-700 mb-1';
   const errorClass = 'text-red-600 text-xs mt-1';
 
-  function onSubmit(_data: FormData) {
-    setSubmitted(true);
+  async function onSubmit(data: FormData) {
+    setSubmitting(true);
+    setSubmitError('');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error('Failed to send');
+      setSubmitted(true);
+    } catch {
+      setSubmitError('Something went wrong. Please try again or email us directly.');
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   if (submitted) {
@@ -205,8 +221,12 @@ export default function ContactForm() {
       </div>
 
       <CTAButton href="" type="submit" variant="primary" fullWidth>
-        Send My Request
+        {submitting ? 'Sending…' : 'Send My Request'}
       </CTAButton>
+
+      {submitError && (
+        <p className="text-red-600 text-sm text-center mt-2">{submitError}</p>
+      )}
 
       <p className="text-xs italic text-neutral-500 text-center mt-2">
         This form is not monitored for crisis situations. If you are in immediate danger, please call 911.
