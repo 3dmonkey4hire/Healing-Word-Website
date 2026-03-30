@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
     const { name, email, phone, contactMethod, ageRange, reason, groupInterest, message, referral } = body;
 
     const { error } = await resend.emails.send({
-      from: 'Healing Word Counseling <hello@healingwordcounseling.com>',
+      from: 'Healing Word Counseling <contact@healingwordcounseling.com>',
       to: ['drewandkirstenfiler@gmail.com'],
       replyTo: email,
       subject: `New Consultation Request from ${name}`,
