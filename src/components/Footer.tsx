@@ -82,7 +82,7 @@ export default function Footer() {
             <Link href="/terms" className="hover:text-white transition-colors focus:outline-none focus:ring-1 focus:ring-white rounded">Terms of Service</Link>
             <Link href="/good-faith-estimate" className="hover:text-white transition-colors focus:outline-none focus:ring-1 focus:ring-white rounded">Good Faith Estimate</Link>
           </div>
-          <p>&copy; 2025 Healing Word Counseling, PLLC — All Rights Reserved</p>
+          <p>&copy; 2026 Healing Word Counseling — All Rights Reserved</p>
         </div>
       </div>
 
