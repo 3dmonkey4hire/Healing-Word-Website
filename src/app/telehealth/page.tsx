@@ -137,7 +137,7 @@ export default function TelehealthPage() {
             Where We Can See Clients
           </h2>
           <p className="text-neutral-700 leading-relaxed text-lg mb-6">
-            Telehealth services are currently available to clients who are physically located in Texas at the time of their sessions. Drew is licensed in Texas and expanding to additional states. If you are outside Texas, reach out — we may be able to help you find a provider.
+            Telehealth services are currently available to clients who are physically located in Texas at the time of their sessions. We are licensed in Texas and expanding to additional states. If you are outside Texas, reach out — we may be able to help you find a provider.
           </p>
           <div className="inline-block bg-brand-teal-light border border-brand-teal text-brand-teal font-bold px-6 py-3 rounded-full text-lg mb-6">
             Texas
