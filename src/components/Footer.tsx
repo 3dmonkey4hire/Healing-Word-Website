@@ -80,7 +80,6 @@ export default function Footer() {
           <div className="flex gap-4 flex-wrap justify-center">
             <Link href="/privacy" className="hover:text-white transition-colors focus:outline-none focus:ring-1 focus:ring-white rounded">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors focus:outline-none focus:ring-1 focus:ring-white rounded">Terms of Service</Link>
-            <Link href="/good-faith-estimate" className="hover:text-white transition-colors focus:outline-none focus:ring-1 focus:ring-white rounded">Good Faith Estimate</Link>
           </div>
           <p>&copy; 2026 Healing Word Counseling — All Rights Reserved</p>
         </div>
