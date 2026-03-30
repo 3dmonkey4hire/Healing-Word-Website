@@ -309,40 +309,6 @@ export default function HomePage() {
         </div>
       </SectionWrapper>
 
-      {/* Testimonials */}
-      <SectionWrapper className="bg-white">
-        <h2
-          className="text-4xl font-bold text-brand-purple-dark text-center mb-10"
-          style={{ fontFamily: 'var(--font-lora)' }}
-        >
-          What Clients Are Saying
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            { quote: "I never thought I'd actually look forward to therapy. But here we are.", attr: 'Alex, 19' },
-            { quote: "Drew meets you exactly where you are. Nothing feels forced or clinical.", attr: 'Jordan, 26' },
-            { quote: "My son went from dreading therapy to asking when his next session is.", attr: 'Parent of a 16-year-old' },
-          ].map(({ quote, attr }) => (
-            <div key={attr} className="bg-white rounded-2xl shadow-sm p-6 border border-neutral-200">
-              <div className="text-5xl text-brand-purple-light mb-3 leading-none font-serif">"</div>
-              <div className="flex gap-1 mb-3" aria-label="5 stars">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-brand-amber text-sm" aria-hidden="true">*</span>
-                ))}
-              </div>
-              <p
-                className="text-neutral-700 italic leading-relaxed mb-4"
-                style={{ fontFamily: 'var(--font-lora)' }}
-              >
-                {quote}
-              </p>
-              <p className="text-sm text-neutral-600 font-medium">— {attr}</p>
-              <p className="text-xs text-neutral-400 mt-1">[Placeholder — replace with real testimonial]</p>
-            </div>
-          ))}
-        </div>
-      </SectionWrapper>
-
       <ClosingCTA />
     </>
   );
