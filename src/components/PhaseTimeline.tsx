@@ -13,7 +13,7 @@ const phases = [
     duration: '5 min',
     description:
       'Drew recaps where we left off in the campaign. We step back into the world together. A brief ritual that signals the shift from real to fictional space.',
-    color: '#40916C',
+    color: '#2D6A4F',
   },
   {
     number: 3,
@@ -21,7 +21,7 @@ const phases = [
     duration: '55 min',
     description:
       "The therapeutic heart. Custom challenges, NPCs, and story beats designed around the group's real themes — trust, identity, conflict, courage. Drew watches for projective material and shapes the narrative toward growth without breaking immersion.",
-    color: '#7A5A28',
+    color: '#2D6A4F',
   },
   {
     number: 4,
@@ -29,7 +29,7 @@ const phases = [
     duration: '15 min',
     description:
       'The most clinically important part. Drew guides everyone out of the fiction: "Your character just did something brave — when in your own life have you had to do that?" This is where story becomes therapy. Never optional, never skipped.',
-    color: '#8B4A2F',
+    color: '#2D6A4F',
   },
   {
     number: 5,
